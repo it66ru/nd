@@ -1,0 +1,29 @@
+/* Страница новости
+-----------------------------------------------------------------------------*/
+
+#news_page h1 {
+	line-height: 30px;
+}
+#news_page h2 {
+	padding-top: 20px;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+
+#news_page p {
+	text-indent: 20px;
+	font-size: 14px;
+	line-height: 25px;
+	margin-bottom: 15px;
+}
+#news_page p.preview {
+	background-color: #fee;
+}
+#news_page ul {
+	padding-left: 20px;
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+#news_page ul li {
+	margin-bottom: 10px;
+}

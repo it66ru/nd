@@ -1,0 +1,85 @@
+
+/* Страница информации об объекте
+-----------------------------------------------------------------------------*/
+div.flat_block_top {
+	overflow: hidden;
+	margin: 5px 0 15px;
+	
+}
+div.flat_block_top_advert {
+	margin-bottom: 25px;
+}
+
+div.flat_block_top > div > p {	margin: 5px 0;}
+
+div.flat_block_top div.info {	float: left;
+	width: 340px;
+}
+
+div.flat_block_top div.price {
+	float: left;
+	width: 170px;
+}
+
+div.flat_block_top div.contact {
+	float: left;
+	width: 220px;
+}
+
+div.flat_block_removed {
+	border: 1px solid #B00;
+	background-color: #FEE;
+	padding: 20px;
+	text-align: center;
+	font-size: 16px;
+	margin: 20px 0;
+}
+
+
+.tooltip {
+	background-color: #ffe;
+	font-size: 11px;
+	border: 1px solid #fd6;
+	padding: 3px 5px;
+	white-space: nowrap;
+}
+
+
+
+/* Форма для добавления и редактирования объекта
+-----------------------------------------------------------------------------*/
+form div.title {	border-top: 1px dotted #ccc;
+	font-size: 18px;
+	margin: 20px 0 10px;
+	padding: 5px 20px;}
+form div.block {
+	float: left;
+	margin: 5px 15px 15px;
+}
+form div.block input, form div.block select, form div.block textarea {
+	margin: 2px;
+	border: 1px solid #bbb;
+	font-size: 14px;
+	padding: 3px 5px;
+}
+form div.block input:focus, form div.block select:focus, form div.block textarea:focus {
+	background: #ffe;
+}
+form div.block select option {
+	margin: 3px;
+	padding: 0 10px;
+}
+
+
+/*
+------------------------------------------------------------------------------*/
+div.LikeButton {	border: 1px solid #EEEEEE;
+	margin-bottom: 15px;
+	padding: 5px 15px;}
+
+/* Описание агентства
+------------------------------------------------------------------------------*/
+div.description p {
+	margin-bottom: 10px;
+	text-indent: 20px;
+}

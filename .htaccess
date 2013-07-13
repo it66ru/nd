@@ -1,0 +1,43 @@
+AddDefaultCharset UTF-8
+
+RewriteEngine on
+Options +FollowSymlinks
+RewriteBase /
+
+
+# ===== фотки =====
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule foto/(.*)$ http://foto.pn66.ru/$1 [L,QSA]
+
+
+# ===== перенесенные урл =====
+
+RewriteRule ^flat_sale/([0-9]+).html$			flat/info/$1 [R=301,L]
+RewriteRule ^flat_sale/([0-9]+)_all.html$		flat/info/$1 [R=301,L]
+RewriteRule ^flat_sale/([0-9]+)$				flat/info/$1 [R=301,L]
+
+RewriteRule ^agency/([0-9]+).html$				agency/info/$1 [R=301,L]
+
+
+
+RewriteCond $1 !^(divan)
+
+RewriteCond $1 !^(favicon\.ico)
+RewriteCond $1 !^(robots\.txt)
+RewriteCond $1 !^(scripts|flash)
+RewriteCond $1 !^(fancybox)
+RewriteCond $1 !^(ico|img|js|css|foto)
+RewriteCond $1 !^(info)
+RewriteCond $1 !^(index\.php)
+
+RewriteCond $1 !^(yandex_483abb30465d56a9\.txt)
+RewriteCond $1 !^(google59766bd0efe71397\.html)
+RewriteCond $1 !^(2e0ea5aa0cea\.html)
+RewriteCond $1 !^(uralweb\.xml)
+RewriteCond $1 !^(yrl\.xml)
+RewriteCond $1 !^(export_ners\.xml)
+RewriteCond $1 !^(qiwi-soap)
+
+
+RewriteRule ^(.+)$ index.php?$1 [L]
